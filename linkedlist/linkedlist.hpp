@@ -1,6 +1,6 @@
 
-#pragma onece
-
+#pragma once
+#include<iostream>
 template<class T>
 struct Node{
     T mData;
@@ -21,12 +21,14 @@ private:
     Node<T>*Head;
     size_t _size;
 public:
-    linkedlist(T data);
+    linkedlist();
     void insertData(T data);
     void deleteData(T data);
+    Node<T> *getNode(T value);
     bool isExist(T value);
     bool isEmpty();
     void printList();
+
     size_t getSize();
 
 
